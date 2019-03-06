@@ -37,7 +37,7 @@ h1 {
     text-transform: uppercase;
     text-align: center;
     color: #E91C1C;
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
 }
 
 h1::after {   /* This is the underline */
@@ -162,7 +162,6 @@ HOME SECTION STYLES
     padding-top: 350px; /* This is spacer before the Main title Logo */
     padding-bottom: 500px; /* This is spacer after the Main title Logo */
     color: #fff;
-
 }
 
 .head-main {
@@ -188,7 +187,7 @@ HOME SECTION STYLES
 }
 
 .head-last {
-    font-size: 18px;
+    font-size: 18px ;
     font-weight: 900;
     padding: 5px 20px 20px 20px;
     border: 1px dotted #fff;
@@ -196,7 +195,7 @@ HOME SECTION STYLES
 }
 
 /*=========================================
-Contact STYLES
+CONTACT STYLES
 =========================================*/
 .flex-container {
     display: -wedkit-flex;
@@ -226,7 +225,7 @@ Contact STYLES
     text-align: center;
     margin: 0 auto;
     color: #13161B;
-    font-weight: center;
+    font-weight: 500;
     font-size: 1.3em;
     letter-spacing: 0pt;
     word-spacing: 0pt;
@@ -252,7 +251,7 @@ Contact STYLES
 
 .reservation form {
     font-size: 15px;
-    outline:none;
+    outline: none;
     font-weight: 600;
     color: #8D8E8F;
     padding: 12px 12px;
@@ -261,7 +260,7 @@ Contact STYLES
     margin: 2% auto;
     border-radius: 7px;
     background: rgb(227,222,222);
-    box_shadow: inset 2px 3px 3px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 3px 3px 0px rgba(0, 0, 0, 0.3);
     font-family: 'Raleway', sans-serif;
 }
 
@@ -284,11 +283,15 @@ Contact STYLES
 }
 
 .reservation input[type="text"]:hover {
-    bow-shadow: 0 0 18px rgda(100,65,0,.8);
+    box-shadow: 0 0 18px rgda(100,65,0,.8);
 }
 
 .form-spacer {
     padding: 30px 39px;
+}
+
+.terms {
+    margin: 30px 1px 0 0
 }
 
 .terms {
@@ -316,7 +319,7 @@ Contact STYLES
     font-weight: 900;
     outline: none;
     text-align: center;
-    text-familiy: 'Raleway', san sans-serif;
+    font-family: 'Raleway', san sans-serif;
     margin: 0px 3%;
     padding: 7px 0px;
     width: 25%;
@@ -344,3 +347,33 @@ FOOTER STYLES
     text-align: right;
 }
 
+/*===============================================================
+@MEDIA QUERIES
+================================================================*/
+@media all and (max-width:640px) and (min-width:381px) {
+    .head-main {
+        font-size: 28px ;
+    }
+}
+
+@media all and (max-width:381px) and (min-width:200px) {
+    .head-main {
+        font-size: 24px ;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
